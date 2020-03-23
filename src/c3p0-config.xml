@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<c3p0-config>
+    <default-config>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mydb1</property>
+        <property name="user">root</property>
+        <property name="password">123</property>
+    </default-config>
+    <!-- This app is massive! -->
+    <named-config name="day04">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mydb1</property>
+        <property name="user">root</property>
+        <property name="password">123</property>
+    </named-config>
+
+</c3p0-config>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.tomcat.maven:common-tomcat-maven-plugin:2.2">
+    <CLASSES>
+      <root url="jar://D:/CodeApplication/IDEA/apache-maven-3.5.2/MavenStore/org/apache/tomcat/maven/common-tomcat-maven-plugin/2.2/common-tomcat-maven-plugin-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/CodeApplication/IDEA/apache-maven-3.5.2/MavenStore/org/apache/tomcat/maven/common-tomcat-maven-plugin/2.2/common-tomcat-maven-plugin-2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/CodeApplication/IDEA/apache-maven-3.5.2/MavenStore/org/apache/tomcat/maven/common-tomcat-maven-plugin/2.2/common-tomcat-maven-plugin-2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://java.sun.com/jsf/composite">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+</head>
+<body>
+<!--将来new的vue实例，会控制这个元素中的所有内容
+这里是MVVM中的V
+-->
+<div id="app">
+    <input type="button" value="跳动" v-on:click="begin">
+    <input type="button" value="停止" @click="stop">
+    <p>{{msg}}</p>
+</div>
+
+</body>
+<script>
+    //这里是MVVM中的VM
+    var vm = new Vue({
+        el:'#app', //表示当前我们new的这vue实例要控制页面的·1哪个部分
+        //data中就是MVVM中的M
+        data:{
+            //data中存放的事el中存放的数据
+            msg:'第一个vue.js程序'//可以避免程序员手动操作dom元素
+        },
+        methods:{
+            /*
+            * 跑马灯操作：先绑定一个点击事件，拿到msg的内容，然后调用字符串的substring方法进行字符截取，将第一个字符放到最后
+            * 点击按钮自动截取，利用定时器
+            * 注意：如果想要调用data中的数据，或者调用methods中的方法，必须使用this实现
+            * */
+
+            begin()
+            {
+                const _this = this;
+                setInterval(function () {
+                    var start = _this.msg.substring(0,1)//拿到头
+                    var end = _this.msg.substring(1)//截取1以后的字符
+                    //拼接字符串
+                    _this.msg = end + start
+                    //注意：vm会自动监听data中所有数据，只要数据一发生改变就会自动把最新的数据渲染到页面，好处：只要关心数据
+
+                },400)
+            }
+        }
+    });
+
+</script>
+
+</html>
