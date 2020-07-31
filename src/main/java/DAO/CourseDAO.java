@@ -9,6 +9,7 @@ import org.apache.commons.dbutils.handlers.ScalarHandler;
 import java.sql.SQLException;
 import java.util.List;
 
+//git测试
 public class CourseDAO {
     private QueryRunner qr = new TxQueryRunner();
     public void addcourse(Course c) throws SQLException {

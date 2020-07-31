@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+//git测试2
 public class UserDAO {
     public void add(User user) throws DocumentException, IOException, SQLException {
         /*
